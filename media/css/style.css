@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+margin:0px; /*Это хорошая практика обнулять поля и отсупы, т.к. различные браузеры их по разному воспринимают. */
+padding:0px;
+text-align:center; /*Выравниваем макет по центру в старых версиях браузеров */
+background-color:#d5d7b5;
+}
+#container{
+margin:0 auto;  /*выравниваем макет по центру в современных браузерах */
+text-align:left;  /*Отменяем tex-align:center заданное в Body. Делаем чтобы весь текст в макете выравнивался по левому краю */
+width:900px; /* ширина нашего макета*/
+}
+/*Здесь пишем стили для шапки сайта */
+#header{
+background-color:#63b9da;
+}
+#header h1 {
+	margin: 0; /* Обнуляем отсупы для заголовка первого уровня, находящегося в шапке. Это нужно обязательно делать, при использовании заголовков. Если используются параграфы, то тоже нужно обнулить отсупы для них. */
+	padding: 10px 0; /* Задаем поля */
+}
+.cart{
+float: right;
+border: 1px;
+    
+    
+}
+.logo{
+float: left;  
+margin: 10px;
+}
+
+
+#menu {
+    
+    font-size: 80%;
+    text-align: center;
+}
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+padding-top: 1em;
+}
+#menu li {
+display: inline;
+}
+#menu a:link, #menu a:visited {
+padding: 0.4em 1em 0.4em 1em;
+color: #FFFFFF;
+background-color: #B51032;
+text-decoration: none;
+border: 1px solid #711515;
+}
+#menu a:hover {
+color: #FFFFFF;
+background-color: #711515;
+}
+/*Здесь пишем стили для левой колонки сайта */
+#left{
+background-color:#a9d28c;
+width:150px;  /*ширина колонки */
+float:left;  /*обязательное выравнивание по левому краю,с включением обтекания*/
+text-align: center;
+}
+/*Здесь пишем стили для правой колонки сайта */
+#right{
+width:150px; /*ширина правой колонки */
+background-color:#a9d28c;
+float:right; /*обазятельное выравнивание колонки по правому краю с включением обтекания */
+text-align: center;
+}
+/*Здесь пишем стили для блока контента */
+#content{
+background-color:#d5d7b5;
+margin:0px; /*обнуляем отступы сверху и снизу*/
+margin-left:152px; /*обязательный отступ слева, должен быть немного больше ширины левой колонки */
+margin-right:152px; /*Обязательный отступ справа, должен быть немного больше ширины правой колонки */
+}
+#content h1 {
+margin:0px; /* Обнуляем отсупы для заголовка первого уровня, находящегося в блоке контента.*/
+} 
+#content p {
+margin:0px; /* Обнуляем отсупы для параграфов я, находящегося в блоке контента.*/
+padding:5px; /*задаем поля, т.е. чтобы был промежуток между строками, чтобы было понятно, что это параграф :)*/
+}
+/*атрибут, который опускает подвал сайта ниже всех блоков. Нужен для корректной работы макета. */
+#searh{
+    
+    text-align: center;
+}
+#top_product{
+text-align: center;
+    
+ }
+ .item{
+background-image: url(media/images/bordbg.gif);
+background-position:top left;
+background-repeat:repeat-y;
+width:274px;
+margin:0 3px 3px 0;
+float:left
+}
+
+.item img{
+float:left
+}
+.item div{
+margin:6px 7px 5px 7px;
+float:left
+}
+.items{
+padding:0 30px 5px 0;
+}
+.item h1{
+font-family:Tahoma;
+font-size:11px;
+font-weight:bold;
+color:#00214B;
+text-decoration:underline;
+padding:7px 0 7px 0
+}
+.item span{
+display:block;
+padding:0 5px 5px 0;
+width:115px;
+font-size:10px;
+font-family:Tahoma;
+float:left;
+color:#333A43
+}
+.item span strong{
+display:block;
+clear:both
+}
+.item p{
+color:#666D75;
+font-size:11px;
+}
+.item p strong{
+font-family:Tahoma;
+font-size:18px;
+color:#FF3000;
+margin:0 10px 0 0
+}
+#clear{
+height:0;
+font-size:1px;
+line-height:0px;
+clear:both;
+}
+
+
+
+
+
+
+
+
+
+/*Здесь пишем стили для под */
+#footer{
+	 
+    
+    padding: 5px; /* Отступы вокруг текста */
+    background: #D71920; /* Цвет фона подвала */
+    text-align: center; /* Выравнивание по центру */
+}
+#footer p{
+margin:0px;  /* обнуляем отступы*/
+padding: 10px 0; /*  задаем поля */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
